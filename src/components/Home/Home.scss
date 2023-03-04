@@ -1,0 +1,42 @@
+.carousel-indicators button{
+    background-color: blue!important;
+    border-radius: 100%;
+}
+
+.contacto {
+    display: flex;
+    padding: 5%;
+    background-color: grey;
+    .contactoImg {
+        width: 40vw;
+        padding: 2%;
+    }
+    .contactoText {
+        color: white;
+        padding: 10%;
+        .contactoTextButton {
+            color: black;
+        }
+    }
+}
+
+.ubicacion {
+    @extend .contacto;
+    background-color: white;
+    .ubicacionText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        padding: 7%;
+        gap: 4%;
+        .ubicacionTextTitle {
+            font-weight: bold;
+            padding-right: 5%;
+        }
+    }
+    .ubicacionImg {
+        width: 100vw;
+        height: 25vw;
+    }
+}
