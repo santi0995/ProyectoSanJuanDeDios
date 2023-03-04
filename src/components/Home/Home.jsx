@@ -2,7 +2,6 @@ import React from "react";
 import { Carousel, Button } from 'react-bootstrap'
 import './Home.scss';
 import Section from "./HomeSection/HomeSection";
-import CardType1 from "../Card Type1/CardType1";
 
 function Home() {
     return (
@@ -46,9 +45,9 @@ function Home() {
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
-        <Section title="Beneficios" display={3}/>
-        <Section title="Servicios" variant="dark" display={4}/>
-        <Section title="Novedades" display={3}/>
+        <Section title="Beneficios" display={3} type={1}/>
+        <Section title="Servicios" variant="dark" display={4} type={3}/>
+        <Section title="Novedades" display={3} type={2}/>
         <div className="contacto">
           <img className="contactoImg" src="default-img.png" alt="Default img" />
           <div className="contactoText">
@@ -64,7 +63,6 @@ function Home() {
           </div>
           <iframe className="ubicacionImg" src="https://maps.google.com/maps?hl=es&amp;q=Centro%20de%20Rehabilitaci%C3%B3n%20San%20Juan%20de%20Dios+(Centro%20de%20Rehabilitaci%C3%B3n%20San%20Juan%20de%20Dios)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
         </div>
-        {/* <CardType1/> */}
       </>
     );
 }
