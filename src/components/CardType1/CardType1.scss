@@ -1,0 +1,30 @@
+
+.card1Container {
+        display: flex;
+        flex-direction: row;
+        background-color: lightgray;
+        padding: 1vw;
+        width: 24vw;
+        height: 12vw;
+        gap: 1vw;
+        .card1Img {
+            display: flex;
+            align-self: center;
+            width: 10vw;
+            height: 10vw;
+            
+        }
+        .card1Text {
+            display: flex;
+            flex-direction: column;
+            margin-top: 0.5vw;
+        }
+}
+
+@media screen and (max-width: 992px) {
+        .card1Text{
+            h4, p {
+                font-size: 1.2vw
+            }
+        }
+  }
