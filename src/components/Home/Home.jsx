@@ -2,6 +2,7 @@ import React from "react";
 import { Carousel, Button } from 'react-bootstrap'
 import './Home.scss';
 import Section from "./HomeSection/HomeSection";
+import Servicios from "../CardsCarousel/CardsCarousel";
 
 function Home() {
     return (
@@ -24,7 +25,6 @@ function Home() {
               src="https://www.tutorialspoint.com/bootstrap/images/slide2.png"
               alt="Second slide"
             />
-    
             <Carousel.Caption>
               <h3>Second slide label</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -36,7 +36,6 @@ function Home() {
               src="https://www.tutorialspoint.com/bootstrap/images/slide3.png"
               alt="Third slide"
             />
-    
             <Carousel.Caption>
               <h3>Third slide label</h3>
               <p>
@@ -46,7 +45,7 @@ function Home() {
           </Carousel.Item>
         </Carousel>
         <Section title="Beneficios" display={3} type={1}/>
-        <Section title="Servicios" variant="dark" display={4} type={3}/>
+        <Servicios title="Servicios" variant="dark" display={4} type={3}/>
         <Section title="Novedades" display={3} type={2}/>
         <div className="contacto">
           <img className="contactoImg" src="default-img.png" alt="Default img" />

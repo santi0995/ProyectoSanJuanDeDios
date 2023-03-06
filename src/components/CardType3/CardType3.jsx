@@ -1,9 +1,10 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
+import "./CardType3.scss"
 
 function CardType3() {
     return(
-        <Card className="cardsCarouselItem" style={{ width: '17vw' }}>
+        <Card className="cardsCarouselItem">
             <Card.Img variant="top" src="default-img.png"/>
             <Card.Body>
                 <Card.Title>Lorem ipsum</Card.Title>

@@ -1,51 +1,36 @@
 import React from "react";
-import { Carousel } from "react-bootstrap";
-import "./HomeSection.scss";
 import CardType1 from "../../CardType1/CardType1";
 import CardType2 from "../../CardType2/CardType2";
 import CardType3 from "../../CardType3/CardType3";
+import "./HomeSection.scss"
 
-
-function Section({title, variant, display, type}) {
-    
+function Section({title, display, type}) {
     function getType(){
         switch (type) {
             case 1:
-                return <CardType1/>
+                return <CardType1/>;
             case 2:
-                return <CardType2/>
+                return <CardType2/>;
             default:
-                return <CardType3/>
+                return <CardType3/>;
         }
     }
-    
-    const items = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
-    const reduceItems = (acc, cur, index) => {
-      const groupIndex = Math.floor(index / display);
-      if (!acc[groupIndex]) acc[groupIndex] = [];
-      acc[groupIndex].push(cur);
-      console.log(acc);
-      return acc;
-    };
 
-    return (
-        <div id={variant}>
-            <h1 id="title">{title}</h1>
-            <Carousel id="cardsCarousel" className="d-none d-md-block" variant="dark">
-            {items.reduce(reduceItems, []).map((item, index) => (
-            <Carousel.Item key={index}>
-                <div className="d-flex justify-content-center">
-                {item.map((item, index) => {
-                    return (
-                        <div className="cardsCarouselItem" key={index}>
-                            {getType()}
-                        </div>
-                    );
-                })}
-                </div>
-            </Carousel.Item>
-            ))}
-            </Carousel>
+    let cards = [];
+
+    function cardsBuilding(){
+        for (let i = 0; i < display; i++) {
+            cards.push(getType());
+        }
+        return cards
+    }
+    
+    return(
+        <div className="HomeSectionContainer">
+            <h2>{title}</h2>
+            <div className="HomeSectionCards">
+                {cardsBuilding()}
+            </div>
         </div>
     )
 }
