@@ -1,0 +1,9 @@
+.cardsCarouselItem {
+    width: 17vw;
+}
+
+@media screen and (max-width: 768px) {
+    .cardsCarouselItem {
+        width: 38vw;
+    }
+}

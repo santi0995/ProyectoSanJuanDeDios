@@ -1,5 +1,4 @@
 .carousel-indicators button{
-    background-color: blue!important;
     border-radius: 100%;
 }
 
@@ -21,7 +20,8 @@
 }
 
 .ubicacion {
-    @extend .contacto;
+    display: flex;
+    padding: 5%;
     background-color: white;
     .ubicacionText {
         display: flex;
@@ -39,4 +39,28 @@
         width: 100vw;
         height: 25vw;
     }
+}
+
+@media screen and (max-width: 768px) {
+    .contacto {
+        flex-direction: column-reverse;
+        .contactoImg {
+            width: 80vw;
+            align-self: center;
+        }
+        .contactoText{
+            align-tracks: end;
+        }
+    }
+    .ubicacion {
+        flex-direction: column;
+        .ubicacionText{
+            align-items: center;
+        }
+        .ubicacionImg {
+            width: 80vw;
+            align-self: center;
+        }
+    }
+
 }

@@ -16,4 +16,11 @@
         top: 80%;
         left: 2%;
     }
-  }
+}
+
+@media screen and (max-width: 768px) {
+    .card2Container .card2Img {
+        height: 50vw;
+        width: 80vw;
+    }
+}
