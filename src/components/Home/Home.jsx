@@ -5,7 +5,6 @@ import { Button, Carousel } from "react-bootstrap";
 
 import React from "react";
 import Section from "./HomeSection/HomeSection";
-import Servicios from "../CardsCarousel/CardsCarousel";
 
 function Home() {
     return (

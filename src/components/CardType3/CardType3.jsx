@@ -1,7 +1,6 @@
 import { Button, Card } from "react-bootstrap";
 
 import React from "react";
-import { Card, Button } from "react-bootstrap";
 
 function CardType3({title, text, image}) {
     return(
