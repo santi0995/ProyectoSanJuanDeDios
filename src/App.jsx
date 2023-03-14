@@ -1,12 +1,14 @@
-import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { BrowserRouter } from 'react-router-dom';
-import { Routes, Route } from 'react-router-dom';
-import MyAppNavbar from './components/Navbar/Navbar';
-import MyAppFooter from './components/Footer/Footer';
-import Home from './components/Home/Home';
 
+import { Route, Routes } from 'react-router-dom';
+
+import { BrowserRouter } from 'react-router-dom';
+import Home from './components/Home/Home';
+import MyAppFooter from './components/Footer/Footer';
+import MyAppNavbar from './components/Navbar/Navbar';
+import React from 'react';
+import Servicios from './components/Servicios/Servicios';
 
 function App() {
   return (
@@ -15,7 +17,8 @@ function App() {
       <BrowserRouter>
         <MyAppNavbar/>
         <Routes>
-          <Route path="/" element={<Home/>} />
+          <Route path="/home" element={<Home/>} />
+          <Route path="/servicios" element={<Servicios/>} />
         </Routes>
         <MyAppFooter/>
       </BrowserRouter>

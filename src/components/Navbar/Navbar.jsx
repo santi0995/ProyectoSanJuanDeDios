@@ -1,6 +1,9 @@
-import React from "react";
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import './Navbar.scss';
+
+import { Container, Nav, NavDropdown, Navbar } from 'react-bootstrap';
+
+import {Link} from 'react-router-dom'
+import React from "react";
 
 function MyAppNavbar() {
   return (
@@ -10,8 +13,16 @@ function MyAppNavbar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className="justify-content-center" id="basic-navbar-nav">
           <Nav>
-            <Nav.Link href="#home">Conócenos</Nav.Link>
-            <Nav.Link href="#link">Servicios</Nav.Link>
+            <Nav.Link>
+              <Link className="linkStyle" to="/home" >
+              Contactos
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link className="linkStyle" to="/servicios" >
+              Servicios
+              </Link>
+            </Nav.Link>
             <Nav.Link href="#link">Especialistas</Nav.Link>
             <NavDropdown title="Novedades" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
