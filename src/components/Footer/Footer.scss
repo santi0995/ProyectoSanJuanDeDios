@@ -53,3 +53,19 @@ footer {
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    footer .footer {
+        .none {
+            width: 3vw;
+        }
+        .footerData .footerDataUl .nodisplay{
+            position: absolute;
+            margin-top: 11vw;
+            .noneNoDisplay {
+                width: 3vw;
+                visibility: hidden;
+            }
+        }
+    }
+}

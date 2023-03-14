@@ -1,10 +1,11 @@
 import { Button, Card } from "react-bootstrap";
 
 import React from "react";
+import { Card, Button } from "react-bootstrap";
 
 function CardType3({title, text, image}) {
     return(
-        <Card className="cardsCarouselItem" style={{ width: '17vw' }}>
+        <Card className="cardsCarouselItem">
             <Card.Img variant="top" src="default-img.png"/>
             <Card.Body>
                 <Card.Title>{title}</Card.Title>

@@ -11,8 +11,7 @@
             display: flex;
             align-self: center;
             width: 10vw;
-            height: 10vw;
-            
+            height: 10vw;  
         }
         .card1Text {
             display: flex;
@@ -21,10 +20,13 @@
         }
 }
 
-@media screen and (max-width: 992px) {
-        .card1Text{
-            h4, p {
-                font-size: 1.2vw
-            }
+@media screen and (max-width: 768px) {
+    .card1Container {
+        width: 80vw;
+        height: 38vw;
+        .card1Img {
+            width: 34vw;
+            height: 34vw;
         }
-  }
+    }
+}
