@@ -9,12 +9,17 @@ function MyAppNavbar() {
   return (
     <Navbar id="Navbar" bg="danger" expand="lg">
       <Container>
-        <Navbar.Brand href="#home"><img className="logo" src="LIMA_CLINICA_Mesa-de-trabajo-1.png" alt="" /></Navbar.Brand>
+        <Nav.Link>
+              <Link className="linkStyle" to="/home" >
+        <Navbar.Brand href="#home"><img className="logo" src="LIMA_CLINICA_Mesa-de-trabajo-1.png" alt="" />
+            </Navbar.Brand>
+              </Link>
+            </Nav.Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className="justify-content-center" id="basic-navbar-nav">
           <Nav>
             <Nav.Link>
-              <Link className="linkStyle" to="/home" >
+              <Link className="linkStyle" to="/contactos" >
               Contactos
               </Link>
             </Nav.Link>
